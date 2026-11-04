@@ -2,20 +2,45 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: python_topics
+    description: "our python topics model"
     columns:
-      - name: id
+      - name: survey_key
         description: "The primary key for this table"
         data_tests:
           - unique
           - not_null
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: interests
+    description: "our interests model"
     columns:
-      - name: id
+      - name: survey_key
         description: "The primary key for this table"
         data_tests:
           - unique
           - not_null
+
+    
+  - name: learning_style
+    description: "our learning style model"
+    columns:
+      - name: survey_key
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+      
+    
+  - name: main_table
+    description: "our main table model"
+    columns:
+      - name: survey_key
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+
+      
+
